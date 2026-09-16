@@ -3,189 +3,995 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project03</title>
-    <link rel="icon" href="./logo.png" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>Tarunya K | Java Full Stack Developer &amp; Modern Web Engineer</title>
+    <meta name="title" content="Tarunya K | Java Full Stack Developer &amp; Modern Web Engineer" />
+    <meta
+      name="description"
+      content="Explore the portfolio of Tarunya K, a Java Full Stack Developer proficient in Core Java, Spring Boot, JDBC/Servlets, React.js, and MySQL. Currently building FoodifyApps at TAP Academy, Bengaluru."
+    />
+    <meta
+      name="keywords"
+      content="Tarunya K, Java Developer, Full Stack Developer, Spring Boot, React, FoodifyApps, TAP Academy, Bengaluru, MySQL, Web Development, Portfolio"
+    />
+    <meta name="author" content="Tarunya K" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#090d16" />
 
-    <style>
-      html {
-        scroll-behavior: smooth;
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/tarunyakallesh" />
+    <meta property="og:title" content="Tarunya K | Java Full Stack Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Java Full Stack Developer with strong backend fundamentals in Core Java, JDBC, Servlets, and Spring, alongside modern frontend skills in React.js and CSS3."
+    />
+    <meta property="og:image" content="./logo.png" />
+
+    <!-- Twitter Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://x.com/home" />
+    <meta property="twitter:title" content="Tarunya K | Java Full Stack Developer Portfolio" />
+    <meta
+      property="twitter:description"
+      content="Explore projects, skills, and engineering background of Tarunya K."
+    />
+    <meta property="twitter:image" content="./logo.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="./logo.png" />
+    <link rel="apple-touch-icon" href="./logo.png" />
+
+    <!-- Google Fonts Preconnect & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons for polished UI controls -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- External Custom Stylesheet -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <!-- JSON-LD Structured Data Schema for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tarunya K",
+        "jobTitle": "Java Full Stack Developer",
+        "url": "https://github.com/tarunyakallesh",
+        "sameAs": [
+          "https://www.linkedin.com/feed/",
+          "https://github.com/tarunyakallesh",
+          "https://x.com/home"
+        ],
+        "alumniOf": "TAP Academy, Bengaluru",
+        "knowsAbout": [
+          "Java",
+          "Spring Boot",
+          "Hibernate",
+          "Servlets",
+          "JSP",
+          "React.js",
+          "JavaScript",
+          "HTML5",
+          "CSS3",
+          "MySQL",
+          "PostgreSQL",
+          "Oracle Database"
+        ]
       }
-    </style>
+    </script>
   </head>
-  <body>
-    <h1 id="back">Tarunya - Full Stack Developer</h1>
+  <body id="top">
+    <!-- ======================================================================
+         Header & Navigation Bar (Glassmorphic with Gradient Hover Effects)
+         ====================================================================== -->
+    <header class="site-header" role="banner">
+      <div class="container nav-container">
+        <!-- Brand Identity -->
+        <a href="#top" class="nav-brand" aria-label="Tarunya K Homepage">
+          <img src="./logo.png" alt="Tarunya K Monogram Logo" class="brand-logo" width="42" height="42" />
+          <div class="brand-info">
+            <span class="brand-name">Tarunya K</span>
+            <span class="brand-badge">Full Stack Developer</span>
+          </div>
+        </a>
 
-    <p>Welcome to my portfolio website! Use the navigation below to explore</p>
-    <ul>
-      <li><a href="#about-me">About me</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li>
-        <a download="Tarunya k" href="./Tarunya K Resume.pdf" target="_blank"
-          >Download Resume</a
-        >
-      </li>
-    </ul>
+        <!-- Main Navigation Links -->
+        <nav class="site-nav" role="navigation" aria-label="Primary Navigation">
+          <ul class="nav-menu" id="nav-menu">
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#skills" class="nav-link">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About Me</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
 
-    <hr />
+        <!-- Nav Action Buttons -->
+        <div class="nav-actions">
+          <a
+            href="./Tarunya K Resume.pdf"
+            download="Tarunya K Resume.pdf"
+            target="_blank"
+            class="btn btn-primary btn-sm"
+            aria-label="Download Tarunya K Resume PDF"
+          >
+            <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+            <span>Resume</span>
+          </a>
+          <button
+            class="mobile-toggle"
+            id="mobile-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </header>
 
-    <h2 id="about-me">About Me</h2>
-    <p>
-      I am a <strong>passionate full-stack developer</strong> with experience in
-      building web applications.Java full stack developer with strong backend
-      fundamentals in Core Java, JDBC, Design Patterns (Singleton, Factory,
-      DAO), and Jakarta EE (Servlets, RequestDispatcher, Sessions), currently
-      building a food-delivery web application ("FoodifyApps") from DB layer
-      through to Servlets/JSP. On the frontend, currently learning HTML5 and CSS
-      with JavaScript and React coming up next, giving a full stack skill set
-      once both tracks converge. Hands-on project experience includes complete
-      DAO-based CRUD implementations, secure authentication (BCrypt password
-      hashing), and multi-servlet request flows. Actively interviewing, with
-      practical understanding of core concepts commonly tested in interviews
-      such as Servlet lifecycle, GET vs POST, and forward vs include.
-    </p>
-    <p><a href="https://github.com/" target="_blank">Visit My GitHub</a></p>
-    <q
-      >Any fool can write code that a computer can understand. Good programmers
-      write code that humans can undersatnd
-    </q>
+    <main id="main-content" role="main">
+      <!-- ======================================================================
+           Hero Section (Avatar on Left + Typewriter Code Editor on Right)
+           ====================================================================== -->
+      <section id="hero" class="hero-section" aria-labelledby="hero-title">
+        <div class="container">
+          <div class="hero-grid">
+            <!-- Left Column: Hero Content & Avatar Presentation -->
+            <div class="hero-content">
+              <div class="status-badge">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                <span>Available for Full-Time Roles &amp; Internships</span>
+              </div>
 
-    <hr />
+              <h1 id="hero-title" class="hero-title">
+                Hi, I'm <span class="gradient-text">Tarunya K</span>
+              </h1>
 
-    <h2 id="skills">Skills</h2>
-    <h3>Technical Skills</h3>
-    <ul type="square">
-      <li>FrontEnd: HTML, CSS, JS, React.js ,next.js</li>
-      <li>BackEnd: Java, Spring Framework, Hibernate</li>
-      <li>Database: Mongo DB, MySql, Oracle</li>
-    </ul>
-    <h3>Learning Goals</h3>
-    <ol type="1">
-      <li>
-        Advanced Frontend Development
-        <ul type="disc">
-          <li>React.js</li>
-          <li>Next.js</li>
-        </ul>
-      </li>
-      <li>
-        Backend technologies
-        <ul>
-          <li>Node.js</li>
-          <li>Express.js</li>
-        </ul>
-      </li>
-      <li>
-        <abbr title="Artificial Intelligence">AI</abbr> Integration in Web Apps
-      </li>
-    </ol>
+              <p class="hero-role">
+                <strong>Java Full Stack Developer</strong> &amp; Web Architect
+              </p>
 
-    <h3>Soft Skills</h3>
-    <ol type="A">
-      <li>Communication</li>
-      <li>Problem Solving</li>
-      <li>Team Collaboration</li>
-    </ol>
+              <p class="hero-bio">
+                Passionate about engineering reliable enterprise backends with
+                <strong>Core Java, Servlets, and Spring Boot</strong>, paired with
+                clean, responsive frontend experiences in <strong>React and modern CSS</strong>.
+                Currently training at <u>TAP Academy, Bengaluru</u> and building scalable applications.
+              </p>
 
-    <h3>Languages Known</h3>
-    <ol type="a">
-      <li>English</li>
-      <li>Hindi</li>
-      <li>Kannada</li>
-      <li>Telugu</li>
-    </ol>
+              <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                  <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                  <span>Explore Projects</span>
+                </a>
+                <a href="#contact" class="btn btn-glass">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  <span>Get in Touch</span>
+                </a>
+                <a
+                  href="./Tarunya K Resume.pdf"
+                  download="Tarunya K Resume.pdf"
+                  target="_blank"
+                  class="btn btn-outline"
+                >
+                  <i class="fa-solid fa-download" aria-hidden="true"></i>
+                  <span>Resume</span>
+                </a>
+              </div>
 
-    <h3>Experience Level</h3>
-    <ol type="I">
-      <li>Beginner</li>
-      <li>Intermediate</li>
-      <li>Advanced</li>
-    </ol>
+              <!-- Hero Avatar Showcase (Static Circular Fit) -->
+              <div class="hero-avatar-wrapper">
+                <div class="avatar-ring">
+                  <img
+                    src="./Tarunya.jpg"
+                    alt="Tarunya K Profile Picture"
+                    class="avatar-image"
+                    width="105"
+                    height="105"
+                  />
+                </div>
+                <div class="avatar-caption">
+                  <strong>Tarunya K</strong>
+                  <span>Software Engineer &bull; TAP Academy</span>
+                </div>
+              </div>
+            </div>
 
-    <h3>Certifications</h3>
-    <ol type="i">
-      <li>Web Development Fundamentals</li>
-      <li>Java Full Stack Developer</li>
-      <li>Cloud Computing Basics</li>
-    </ol>
+            <!-- Right Column: Interactive Mac-Style Code Editor Window -->
+            <div class="code-editor-wrapper">
+              <div class="code-editor-card" aria-label="Interactive Code Editor Preview">
+                <div class="editor-header">
+                  <div class="editor-controls" aria-hidden="true">
+                    <span class="ctrl-btn ctrl-close"></span>
+                    <span class="ctrl-btn ctrl-minimize"></span>
+                    <span class="ctrl-btn ctrl-maximize"></span>
+                  </div>
+                  <div class="editor-tab">
+                    <i class="fa-brands fa-java tab-icon" aria-hidden="true"></i>
+                    <span>TarunyaProfile.java</span>
+                  </div>
+                  <span class="editor-badge">JDK 21</span>
+                </div>
+                <div class="editor-body">
+                  <code id="code-typewriter" aria-live="polite">
+                    <!-- Dynamic realistic typewriter code will type out here via script.js -->
+                    <span class="token-comment">// Loading developer profile...</span>
+                  </code>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <h3>Tech Glossary</h3>
-    <dl>
-      <dt><abbr title="Application Programming Interface">API</abbr></dt>
-      <dd>Application Programming Interface for system communication</dd>
-      <dt>
-        <abbr title="Continuous Integration / Continuous Deployment"
-          >CI/CD</abbr
-        >
-      </dt>
-      <dd>
-        Practice of automating the integration and deployment of code changes
-      </dd>
-      <dt><abbr title="Hypertext markup language">HTML</abbr></dt>
-      <dd>Standard markup language for creating web pages</dd>
-      <dt><abbr title="Document Object Model">DOM</abbr></dt>
-      <dd>A programming interface for web decuments</dd>
-    </dl>
+      <!-- ======================================================================
+           Projects Section (Placed Directly Below Hero as Requested)
+           ====================================================================== -->
+      <section id="projects" class="section projects-section" aria-labelledby="projects-title">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-tag">Portfolio Showcase</span>
+            <h2 id="projects-title" class="section-title">
+              Featured <span class="gradient-text">Projects</span>
+            </h2>
+            <p class="section-subtitle">
+              Production-ready web applications built with robust backend architectures,
+              secure database layers, and fluid frontend interfaces.
+            </p>
+          </header>
 
-    <hr />
+          <div class="projects-grid">
+            <!-- Project 1: FoodifyApps (Food Delivery Application) -->
+            <article class="project-card glass-panel" aria-labelledby="project-1-title">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80"
+                  alt="FoodifyApps Food Delivery Platform Interface"
+                  class="project-image"
+                  loading="lazy"
+                  width="400"
+                  height="220"
+                />
+                <span class="project-badge">Full Stack</span>
+              </div>
+              <div class="project-body">
+                <h3 id="project-1-title" class="project-title">FoodifyApps</h3>
+                <p class="project-desc">
+                  A comprehensive food-delivery web application built from the database layer through to
+                  Servlets and JSP. Implements complete DAO-based CRUD operations, multi-servlet request flows,
+                  session tracking, and BCrypt encrypted authentication.
+                </p>
+                <div class="project-tags">
+                  <span class="tag-pill">Core Java</span>
+                  <span class="tag-pill">Jakarta Servlets</span>
+                  <span class="tag-pill">JDBC &amp; DAO</span>
+                  <span class="tag-pill">BCrypt Security</span>
+                  <span class="tag-pill">MySQL</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/tarunyakallesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn btn-glass btn-sm"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-    <h2 id="projects">Projects</h2>
-    <ul>
-      <li>Task Manager App</li>
-      <li>Weather Dashboard</li>
-      <li>Time Table</li>
-    </ul>
+            <!-- Project 2: Netflix Clone (Cinematic Streaming App) -->
+            <article class="project-card glass-panel" aria-labelledby="project-2-title">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?auto=format&fit=crop&w=800&q=80"
+                  alt="Netflix Streaming Platform Clone Dashboard"
+                  class="project-image"
+                  loading="lazy"
+                  width="400"
+                  height="220"
+                />
+                <span class="project-badge">Frontend</span>
+              </div>
+              <div class="project-body">
+                <h3 id="project-2-title" class="project-title">Netflix Clone</h3>
+                <p class="project-desc">
+                  A cinematic video-streaming web application featuring an authentic dark UI theme,
+                  dynamic movie category sliders, hero trailer banners, TMDB API data integration,
+                  and fully responsive navigation for all screen sizes.
+                </p>
+                <div class="project-tags">
+                  <span class="tag-pill">React.js</span>
+                  <span class="tag-pill">HTML5 &amp; CSS3</span>
+                  <span class="tag-pill">TMDB REST API</span>
+                  <span class="tag-pill">Async Fetch</span>
+                  <span class="tag-pill">Flex &amp; Grid</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/tarunyakallesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn btn-glass btn-sm"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </article>
 
-    <hr />
+            <!-- Project 3: Spring E-Commerce Platform -->
+            <article class="project-card glass-panel" aria-labelledby="project-3-title">
+              <div class="project-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                  alt="Spring E-Commerce Enterprise Web Application"
+                  class="project-image"
+                  loading="lazy"
+                  width="400"
+                  height="220"
+                />
+                <span class="project-badge">Spring &amp; DB</span>
+              </div>
+              <div class="project-body">
+                <h3 id="project-3-title" class="project-title">Spring E-Commerce Store</h3>
+                <p class="project-desc">
+                  An enterprise-grade e-commerce application engineered using Spring Boot backend services
+                  and Hibernate ORM. Features product management, relational database schemas,
+                  cart state persistence, and modular RESTful API endpoints.
+                </p>
+                <div class="project-tags">
+                  <span class="tag-pill">Spring Boot</span>
+                  <span class="tag-pill">Hibernate ORM</span>
+                  <span class="tag-pill">PostgreSQL</span>
+                  <span class="tag-pill">REST APIs</span>
+                  <span class="tag-pill">Maven</span>
+                </div>
+                <div class="project-actions">
+                  <a
+                    href="https://github.com/tarunyakallesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-sm"
+                  >
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                    <span>GitHub Code</span>
+                  </a>
+                  <a
+                    href="#contact"
+                    class="btn btn-glass btn-sm"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                    <span>Live Demo</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-    <h2 id="contact">Contact</h2>
-    <h4><em>Tarunya - Full Stack Developer</em><br /></h4>
-    <pre>
-    TAP Academy, BTM Layout
-    Bengaluru, Karnataka, India
-    560076</pre
-    >
-    <p>
-      Email:
-      <a href="mailto:tarunyakallesh2317@gmail.com"
-        >tarunyakallesh23172@gamil.com</a
-      >
-    </p>
-    <p>Ph. no: <a href="tel:9611853416">9611853416</a></p>
+          <!-- Day 04 Bonus Link: TAP Academy Timetable -->
+          <aside class="projects-bonus-box">
+            <div class="bonus-text">
+              <h4><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Looking for my TAP Academy Training Schedule?</h4>
+              <p>Explore the full HTML table schedule and module curriculum created in Day 04.</p>
+            </div>
+            <a href="../Day04/index.html" class="btn btn-outline btn-sm">
+              <span>View Day 04 Timetable</span>
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </a>
+          </aside>
+        </div>
+      </section>
 
-    <h4><em>Connect with me in social media</em></h4>
-    <a href="https://www.linkedin.com/feed/" target="_blank">
-      <img
-        src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
-        alt="image not found"
-        heigth="50"
-        width="50"
-    /></a>
+      <!-- ======================================================================
+           Skills Section (Categorized with Official Devicon Logos)
+           ====================================================================== -->
+      <section id="skills" class="section skills-section" aria-labelledby="skills-title">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-tag">Technical Arsenal</span>
+            <h2 id="skills-title" class="section-title">
+              Skills &amp; <span class="gradient-text">Technologies</span>
+            </h2>
+            <p class="section-subtitle">
+              Every tool and technology I work with to build responsive, performant,
+              and maintainable software systems.
+            </p>
+          </header>
 
-    <a href="https://github.com/tarunyakallesh" target="_blank">
-      <img
-        src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png"
-        alt="image not found"
-        heigth="50"
-        width="50"
-    /></a>
+          <div class="skills-grid">
+            <!-- 1. Frontend Skills -->
+            <article class="skill-category-card glass-panel">
+              <div class="skill-category-header">
+                <div class="category-icon frontend" aria-hidden="true">
+                  <i class="fa-solid fa-desktop"></i>
+                </div>
+                <h3 class="category-title">Frontend</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg"
+                    alt="HTML5 Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">HTML5</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg"
+                    alt="CSS3 Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">CSS3</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"
+                    alt="JavaScript Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
+                    alt="React.js Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">React.js</span>
+                </div>
+              </div>
+            </article>
 
-    <a href="https://x.com/home" target="_blank">
-      <img
-        src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png"
-        alt="image not found"
-        heigth="50"
-        width="50"
-    /></a>
+            <!-- 2. Backend Programming Languages -->
+            <article class="skill-category-card glass-panel">
+              <div class="skill-category-header">
+                <div class="category-icon backend" aria-hidden="true">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <h3 class="category-title">Backend Languages</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+                    alt="Java Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">Java</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                    alt="Python Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">Python</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg"
+                    alt="C++ Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">C++</span>
+                </div>
+              </div>
+            </article>
 
-    <hr />
+            <!-- 3. Frameworks -->
+            <article class="skill-category-card glass-panel">
+              <div class="skill-category-header">
+                <div class="category-icon frameworks" aria-hidden="true">
+                  <i class="fa-solid fa-cubes"></i>
+                </div>
+                <h3 class="category-title">Frameworks</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                    alt="Spring Framework Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">Spring</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg"
+                    alt="Spring Boot Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">Spring Boot</span>
+                </div>
+              </div>
+            </article>
 
-    <p>
-      &copy; 2026 Tarunya | Built with <strong>Pure HTML</strong> at
-      <u>TAP Academy</u>
-    </p>
+            <!-- 4. Databases -->
+            <article class="skill-category-card glass-panel">
+              <div class="skill-category-header">
+                <div class="category-icon database" aria-hidden="true">
+                  <i class="fa-solid fa-database"></i>
+                </div>
+                <h3 class="category-title">Databases</h3>
+              </div>
+              <div class="skill-items-list">
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg"
+                    alt="MySQL Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">MySQL</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"
+                    alt="PostgreSQL Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">PostgreSQL</span>
+                </div>
+                <div class="skill-item">
+                  <img
+                    src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/oracle/oracle-original.svg"
+                    alt="Oracle Database Official Logo"
+                    class="skill-logo"
+                    width="42"
+                    height="42"
+                    loading="lazy"
+                  />
+                  <span class="skill-name">Oracle DB</span>
+                </div>
+              </div>
+            </article>
+          </div>
 
-    <p><a href="#back">&#9757; Back to Top</a></p>
+          <!-- Secondary Grid: Tech Glossary & Competencies (Preserving & Elevating Original Data) -->
+          <div class="skills-meta-grid">
+            <!-- Tech Glossary using Semantic Definition Lists -->
+            <section class="glossary-card glass-panel" aria-labelledby="glossary-title">
+              <h3 id="glossary-title">
+                <i class="fa-solid fa-book-bookmark gradient-text" aria-hidden="true"></i>
+                <span>Core Engineering Glossary</span>
+              </h3>
+              <dl class="glossary-list">
+                <div class="glossary-item">
+                  <dt class="glossary-term">
+                    <abbr title="Application Programming Interface">API</abbr>
+                  </dt>
+                  <dd class="glossary-desc">
+                    Application Programming Interface enabling seamless data exchange between client and backend services.
+                  </dd>
+                </div>
+                <div class="glossary-item">
+                  <dt class="glossary-term">
+                    <abbr title="Continuous Integration / Continuous Deployment">CI/CD</abbr>
+                  </dt>
+                  <dd class="glossary-desc">
+                    Modern practice of automating code building, testing, and continuous deployment workflows.
+                  </dd>
+                </div>
+                <div class="glossary-item">
+                  <dt class="glossary-term">
+                    <abbr title="Hypertext Markup Language">HTML5</abbr>
+                  </dt>
+                  <dd class="glossary-desc">
+                    Standard semantic markup language structuring the modern, accessible web.
+                  </dd>
+                </div>
+                <div class="glossary-item">
+                  <dt class="glossary-term">
+                    <abbr title="Document Object Model">DOM</abbr>
+                  </dt>
+                  <dd class="glossary-desc">
+                    Standard tree programming interface representing and manipulating structured web documents.
+                  </dd>
+                </div>
+              </dl>
+            </section>
+
+            <!-- Soft Skills & Languages Known -->
+            <aside class="pills-card glass-panel" aria-labelledby="competencies-title">
+              <h3 id="competencies-title">
+                <i class="fa-solid fa-certificate gradient-text" aria-hidden="true"></i>
+                <span>Competencies &amp; Spoken Languages</span>
+              </h3>
+
+              <div>
+                <p class="pill-group-title">Soft Skills</p>
+                <div class="pill-collection">
+                  <span class="pill-badge">Problem Solving</span>
+                  <span class="pill-badge">Team Collaboration</span>
+                  <span class="pill-badge">Clear Communication</span>
+                  <span class="pill-badge">Analytical Thinking</span>
+                </div>
+              </div>
+
+              <div>
+                <p class="pill-group-title">Languages Spoken</p>
+                <div class="pill-collection">
+                  <span class="pill-badge highlight">English</span>
+                  <span class="pill-badge highlight">Kannada</span>
+                  <span class="pill-badge highlight">Hindi</span>
+                  <span class="pill-badge highlight">Telugu</span>
+                </div>
+              </div>
+
+              <div>
+                <p class="pill-group-title">Certifications</p>
+                <div class="pill-collection">
+                  <span class="pill-badge">Java Full Stack Developer</span>
+                  <span class="pill-badge">Web Development Fundamentals</span>
+                  <span class="pill-badge">Cloud Computing Basics</span>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           About Me Section
+           ====================================================================== -->
+      <section id="about" class="section about-section" aria-labelledby="about-title">
+        <div class="container">
+          <article class="about-card glass-panel">
+            <div class="about-text">
+              <span class="section-tag">Background</span>
+              <h2 id="about-title" class="section-title">
+                Crafting Scalable <span class="gradient-text">Software</span>
+              </h2>
+              <p>
+                I am a passionate <strong>Java Full Stack Developer</strong> with strong backend
+                fundamentals in <strong>Core Java, JDBC, and Design Patterns (Singleton, Factory, DAO)</strong>,
+                alongside <strong>Jakarta EE (Servlets, RequestDispatcher, Sessions)</strong>.
+              </p>
+              <p>
+                Currently building my flagship food-delivery application (<em>FoodifyApps</em>) from the database
+                schema up to Servlets and JSP. On the frontend track, I am mastering <strong>HTML5, modern CSS, JavaScript, and React</strong>,
+                merging robust server-side architecture with smooth, interactive user experiences.
+              </p>
+
+              <!-- Preserved and corrected developer quote -->
+              <blockquote class="about-quote">
+                <i class="fa-solid fa-quote-left" aria-hidden="true"></i>
+                &ldquo;Any fool can write code that a computer can understand. Good programmers write code that humans can understand.&rdquo;
+                <footer>&mdash; Martin Fowler</footer>
+              </blockquote>
+            </div>
+
+            <div class="about-highlights">
+              <div class="highlight-box">
+                <span class="highlight-number">3+</span>
+                <span class="highlight-label">Full Stack Projects</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-number">100%</span>
+                <span class="highlight-label">DAO CRUD Mastery</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-number">10+</span>
+                <span class="highlight-label">Core Tech Stacks</span>
+              </div>
+              <div class="highlight-box">
+                <span class="highlight-number">TAP</span>
+                <span class="highlight-label">Academy Trained</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ======================================================================
+           Contact Section (Interactive Avatar + Gradient Form)
+           ====================================================================== -->
+      <section id="contact" class="section contact-section" aria-labelledby="contact-title">
+        <div class="container">
+          <header class="section-header">
+            <span class="section-tag">Let's Connect</span>
+            <h2 id="contact-title" class="section-title">
+              Get in <span class="gradient-text">Touch</span>
+            </h2>
+            <p class="section-subtitle">
+              Have an opening, collaboration idea, or a project in mind? Reach out directly
+              or submit the contact form below.
+            </p>
+          </header>
+
+          <div class="contact-wrapper">
+            <!-- Left Column: Interactive Avatar Greeting & Quick Info -->
+            <article class="contact-info-card glass-panel">
+              <div>
+                <!-- Interactive Avatar / Emoji Sphere -->
+                <div class="interactive-avatar-box">
+                  <div class="avatar-emoji-sphere" aria-hidden="true">
+                    👨‍💻
+                  </div>
+                  <div class="greeting-text">
+                    <h4>Let's build together!</h4>
+                    <p>Open for opportunities &amp; discussions</p>
+                  </div>
+                </div>
+
+                <div class="contact-channels">
+                  <!-- Email (Fixed Typo) -->
+                  <a href="mailto:tarunyakallesh2317@gmail.com" class="contact-channel-item">
+                    <div class="channel-icon" aria-hidden="true">
+                      <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div class="channel-details">
+                      <span class="channel-label">Email Me</span>
+                      <span class="channel-value">tarunyakallesh2317@gmail.com</span>
+                    </div>
+                  </a>
+
+                  <!-- Phone Number -->
+                  <a href="tel:9611853416" class="contact-channel-item">
+                    <div class="channel-icon" aria-hidden="true">
+                      <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <div class="channel-details">
+                      <span class="channel-label">Call / WhatsApp</span>
+                      <span class="channel-value">+91 96118 53416</span>
+                    </div>
+                  </a>
+
+                  <!-- Location Address -->
+                  <div class="contact-channel-item">
+                    <div class="channel-icon" aria-hidden="true">
+                      <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="channel-details">
+                      <span class="channel-label">Location</span>
+                      <address class="channel-value" style="font-style: normal;">
+                        TAP Academy, BTM Layout, Bengaluru, Karnataka, India - 560076
+                      </address>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media Profiles with Flaticon / SVGs & Gradient Hover -->
+              <div class="contact-socials-wrapper">
+                <h5>Connect on Socials</h5>
+                <div class="social-links-row">
+                  <a
+                    href="https://www.linkedin.com/feed/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-btn"
+                    aria-label="Tarunya K LinkedIn Profile"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/3536/3536505.png"
+                      alt="LinkedIn Logo"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                    />
+                  </a>
+                  <a
+                    href="https://github.com/tarunyakallesh"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-btn"
+                    aria-label="Tarunya K GitHub Profile"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/2111/2111432.png"
+                      alt="GitHub Logo"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                    />
+                  </a>
+                  <a
+                    href="https://x.com/home"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="social-btn"
+                    aria-label="Tarunya K X (Twitter) Profile"
+                  >
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/128/3670/3670151.png"
+                      alt="X Logo"
+                      width="24"
+                      height="24"
+                      loading="lazy"
+                    />
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Right Column: Interactive Gradient Themed Form -->
+            <section class="contact-form-card glass-panel" aria-labelledby="form-heading">
+              <div class="form-header">
+                <h3 id="form-heading">Send a Message</h3>
+                <p>Fill out the fields below and I'll get back to you promptly.</p>
+              </div>
+
+              <form id="portfolio-contact-form" class="contact-form" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                  <label for="user-name" class="form-label">Full Name</label>
+                  <input
+                    type="text"
+                    id="user-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="e.g. Alex Johnson"
+                    required
+                  />
+                </div>
+
+                <!-- Mobile Number Field -->
+                <div class="form-group">
+                  <label for="user-phone" class="form-label">Mobile Number</label>
+                  <input
+                    type="tel"
+                    id="user-phone"
+                    name="phone"
+                    class="form-input"
+                    placeholder="e.g. +91 98765 43210"
+                    pattern="[0-9+ -]{10,15}"
+                    required
+                  />
+                </div>
+
+                <!-- Email ID Field -->
+                <div class="form-group">
+                  <label for="user-email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="user-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="e.g. alex@example.com"
+                    required
+                  />
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                  <label for="user-message" class="form-label">Message</label>
+                  <textarea
+                    id="user-message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Write your project details or message here..."
+                    rows="4"
+                    required
+                  ></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary form-submit-btn">
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                  <span>Send Message</span>
+                </button>
+              </form>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Success Feedback Toast -->
+    <div id="form-toast" class="form-toast" role="alert" aria-live="assertive">
+      <i class="fa-solid fa-circle-check" aria-hidden="true"></i>
+      <span>Thank you! Your message has been sent successfully.</span>
+    </div>
+
+    <!-- ======================================================================
+         Footer Section
+         ====================================================================== -->
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <img src="./logo.png" alt="Tarunya K Logo" class="footer-logo" width="48" height="48" />
+            <div>
+              <span class="footer-brand-title">Tarunya K</span>
+              <p class="footer-brand-sub">Java Full Stack Developer &bull; TAP Academy</p>
+            </div>
+          </div>
+
+          <nav class="footer-nav" aria-label="Footer Navigation">
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+            <a href="./Tarunya K Resume.pdf" download="Tarunya K Resume.pdf">Resume</a>
+          </nav>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="footer-copyright">
+            &copy; 2026 <strong>Tarunya K</strong>. Built with semantic <strong>HTML5 &amp; CSS3</strong> at <u>TAP Academy</u>.
+          </p>
+
+          <a href="#top" class="footer-back-to-top" aria-label="Scroll back to top">
+            <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+            <span>Back to Top</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script src="./script.js"></script>
   </body>
 </html>
